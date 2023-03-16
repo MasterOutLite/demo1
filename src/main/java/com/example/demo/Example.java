@@ -7,8 +7,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("say")
 public class Example {
+
     @GetMapping(produces= "text/html")
     public String sayHello () {
         return "{title: 'Hello', body: 'It is my first code!'}";
+    }
+
+    @GetMapping("/get")
+    public String GetHello () {
+        return "Get msg";
     }
 }
