@@ -15,6 +15,6 @@ public class Example {
 
     @GetMapping("/get")
     public String GetHello () {
-        return "Get msg";
+        return "Get msgfgf";
     }
 }
